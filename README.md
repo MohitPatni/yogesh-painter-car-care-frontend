@@ -1,11 +1,11 @@
-# yogesh-painter-car-care-frontend
+﻿# yogesh-painter-car-care-frontend
 
 o [localhost:4200](localhost:4200)
 ### What's included
 
 Within the download you'll find the following directories and files:
 
-```
+
 Now Ui Kit Angular
 ├── CHANGELOG.md
 ├── README.md
@@ -108,4 +108,4 @@ Now Ui Kit Angular
 │   └── typings.d.ts
 ├── tsconfig.json
 └── tslint.json
-```
+
