@@ -16,7 +16,8 @@ export class NavbarComponent implements OnInit {
 
     ngOnInit() {
         const navbar: HTMLElement = this.element.nativeElement;
-        this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
+        
+      this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
     }
     sidebarOpen() {
         const toggleButton = this.toggleButton;
@@ -31,9 +32,9 @@ export class NavbarComponent implements OnInit {
     sidebarClose() {
         const html = document.getElementsByTagName('html')[0];
         // console.log(html);
-        this.toggleButton.classList.remove('toggled');
+       this.toggleButton.classList.remove('toggled');
         this.sidebarVisible = false;
-        html.classList.remove('nav-open');
+       html.classList.remove('nav-open');
     };
     sidebarToggle() {
         // const toggleButton = this.toggleButton;

@@ -8004,6 +8004,7 @@ Created using IcoMoon - icomoon.io
 .carousel .carousel-inner {
     box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
     border-radius: 0.1875rem;
+    
 }
 
 .carousel .card {
@@ -8957,6 +8958,7 @@ Created using IcoMoon - icomoon.io
     border-radius: 0.1875rem;
     height: auto;
 }
+
 
 .product-page .section {
     padding-top: 30px;
@@ -11025,6 +11027,11 @@ Created using IcoMoon - icomoon.io
         -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
         -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
         transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+
+        /* Added by manually - to overcome problem of bottom scroll */
+        width: 100% !important;
+        overflow-x: hidden !important;
+        
     }
     .bar1,
     .bar2,

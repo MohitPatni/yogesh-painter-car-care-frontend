@@ -5,7 +5,7 @@ import * as Rellax from 'rellax';
 @Component({
   selector: 'app-index',
   templateUrl: './contact-us.component.html',
-  styleUrls: ['./contact-us.component.scss']
+  styleUrls: ['./contact-us.component.scss','../../../assets/css/common.css']
 })
 export class ContactUsComponent implements OnInit {
    

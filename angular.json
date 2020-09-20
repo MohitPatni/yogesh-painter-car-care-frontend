@@ -26,7 +26,9 @@
               "src/assets/css/demo.css"
             ],
             "scripts": [
-              "node_modules/rellax/rellax.min.js"
+              "node_modules/rellax/rellax.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/custom.js"
             ]
           },
           "configurations": {

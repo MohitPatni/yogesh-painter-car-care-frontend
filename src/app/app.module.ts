@@ -6,9 +6,10 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
-
+import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ThemeModule } from './theme/theme.module';
 
 @NgModule({
     declarations: [
@@ -17,12 +18,14 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     ],
     imports: [
         BrowserAnimationsModule,
+        JwBootstrapSwitchNg2Module,
         NgbModule,
         FormsModule,
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
+        ThemeModule
     ],
     providers: [],
     bootstrap: [AppComponent]
