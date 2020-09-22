@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 4200;
 const server = require('http').Server(app);
 
-app.use(express.static(__dirname, 'dist', {index: false}));
+
+app.use(express.static('./dist}'));
+
 
 
 server.listen(port, function() {

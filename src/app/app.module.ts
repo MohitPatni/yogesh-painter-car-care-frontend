@@ -10,6 +10,7 @@ import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ThemeModule } from './theme/theme.module';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
     declarations: [
@@ -25,6 +26,7 @@ import { ThemeModule } from './theme/theme.module';
         AppRoutingModule,
         ComponentsModule,
         ExamplesModule,
+       
         ThemeModule
     ],
     providers: [],
