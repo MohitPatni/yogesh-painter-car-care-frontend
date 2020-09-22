@@ -5,20 +5,20 @@ const port = process.env.PORT || 4200;
 const server = require('http').Server(app);
 
 
-app.use(express.static('./dist}'));
+// Serve only the static files form the angularapp directory
+app.use(express.static(__dirname + '/yogesh-painter-car-care'));
+ 
+app.get('/*', function(req,res) {
+ 
+res.sendFile(path.join(__dirname+'/yogesh-painter-car-care/index.html'));
+});
+ 
+// Start the app by listening on the default Heroku port
 
 
-
-server.listen(port, function() {
+server.listen(port, function () {
     console.log("App running on port " + port);
 })
 
-// PathLocationStrategy
 
-app.get('', function(req, res) {
-    res.sendFile(path.join(__dirname, 'src', 'index.html'));
-});
 
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'src', 'index.html'));
-});

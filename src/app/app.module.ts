@@ -1,5 +1,5 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA   } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
@@ -10,7 +10,8 @@ import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ThemeModule } from './theme/theme.module';
-import { HttpModule } from '@angular/http';
+import { BrowserModule } from '@angular/platform-browser';  
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -20,16 +21,19 @@ import { HttpModule } from '@angular/http';
     imports: [
         BrowserAnimationsModule,
         JwBootstrapSwitchNg2Module,
+        BrowserModule,
+        HttpClientModule,
         NgbModule,
         FormsModule,
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
         ExamplesModule,
-       
-        ThemeModule
+        ThemeModule,
+        
     ],
     providers: [],
     bootstrap: [AppComponent]
+    
 })
 export class AppModule { }
