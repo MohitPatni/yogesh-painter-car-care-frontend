@@ -15,14 +15,20 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="assets/css/common.css" rel="stylesheet" />
   
+  
+
+
 </head>
 
 <body class="sidebar-collapse">
-  <app-root>
-    <div class="d-flex justify-content-center" style="padding: 150px;">
-      <div class="spinner-border" role="status">
-        <span class="sr-only">Loading...</span>
+  <app-root class="loader-active">
+    <div class="preloader">
+      <div class="preloader-spinner">
+        <div class="loader-content">
+          <img src="assets/img/preloader.gif" alt="JSOFT">
+        </div>
       </div>
     </div>
   </app-root>
@@ -38,7 +44,9 @@
 
 </body>
 <footer class="footer footer-default" style="background-color: #1B5696; height: 300px;">
-  <div class="container">
+  
+ 
+  <div class="container">  
     <div class="row">
       <div class="col-sm-4">
 

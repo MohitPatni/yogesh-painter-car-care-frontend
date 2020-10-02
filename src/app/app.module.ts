@@ -13,6 +13,7 @@ import { ThemeModule } from './theme/theme.module';
 import { BrowserModule } from '@angular/platform-browser';  
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -30,6 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
         ComponentsModule,
         ExamplesModule,
         ThemeModule,
+        
         
     ],
     providers: [],

@@ -4,3 +4,8 @@
   // #f96332
 }
 
+.dropdown-menu .dropdown-item:focus,
+        .dropdown-menu .dropdown-item:hover{
+            background-color: #285596;
+           color: white;
+        }

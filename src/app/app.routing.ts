@@ -11,6 +11,7 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 import {IndexComponent} from './theme/index/index.component';
 import {AboutUsComponent } from './theme/about-us/about-us.component';
 import {ContactUsComponent} from './theme/contact-us/contact-us.component'
+import {AllServicesComponent} from './theme/all-services/all-services.component'
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -22,6 +23,15 @@ const routes: Routes =[
     { path: 'examples/profile',     component: ProfileComponent },
     { path: 'about_us',     component: AboutUsComponent },
     { path: 'contact_us',     component: ContactUsComponent },
+    { path: 'car_denting_painting',     component: AllServicesComponent },
+    { path: 'Body_polish',     component: AllServicesComponent },
+    { path: 'detailing',     component: AllServicesComponent },
+    { path: 'interior_cleaning',     component: AllServicesComponent },
+    { path: 'engine_coating',     component: AllServicesComponent },
+    { path: 'fornt_glass_treatment',     component: AllServicesComponent },
+    { path: 'rusting_coating',     component: AllServicesComponent },
+    { path: 'ceramic_coating',     component: AllServicesComponent },
+    { path: 'teflon_coating',     component: AllServicesComponent },
 ];
 
 @NgModule({

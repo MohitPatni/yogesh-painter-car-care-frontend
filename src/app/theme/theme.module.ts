@@ -10,6 +10,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { IndexComponent } from './index/index.component';
+import { AllServicesComponent } from './all-services/all-services.component';
 import {ThemeComponent} from './theme.component'
 
 @NgModule({
@@ -29,6 +30,7 @@ import {ThemeComponent} from './theme.component'
         IndexComponent,
         ThemeComponent,
         FooterComponent,
+        AllServicesComponent,
         
     ]
 })

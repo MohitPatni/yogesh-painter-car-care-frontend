@@ -44,12 +44,14 @@
 
            &.show .dropdown-menu{
                display: block;
+               
            }
         }
 
         .dropdown-menu .dropdown-item:focus,
         .dropdown-menu .dropdown-item:hover{
             color: $white-color;
+           
         }
 
         .navbar-translate{
@@ -194,6 +196,7 @@
 
         .dropdown-menu .dropdown-item{
             color: $white-color;
+      
         }
     }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
-
+import { MasterService } from '../../service/master-services.service';
 @Component({
     selector: 'app-navbar',
     templateUrl: './navbar.component.html',
@@ -9,20 +9,23 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 export class NavbarComponent implements OnInit {
     private toggleButton: any;
     private sidebarVisible: boolean;
+    MasterServiceList : any;
 
-    constructor(public location: Location, private element : ElementRef) {
+
+    constructor(public location: Location, private element: ElementRef, private masterService: MasterService) {
         this.sidebarVisible = false;
     }
 
     ngOnInit() {
         const navbar: HTMLElement = this.element.nativeElement;
-        
-      this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
+        this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
+
+        //this.getAllMasterService();
     }
     sidebarOpen() {
         const toggleButton = this.toggleButton;
         const html = document.getElementsByTagName('html')[0];
-        setTimeout(function(){
+        setTimeout(function () {
             toggleButton.classList.add('toggled');
         }, 500);
         html.classList.add('nav-open');
@@ -32,9 +35,9 @@ export class NavbarComponent implements OnInit {
     sidebarClose() {
         const html = document.getElementsByTagName('html')[0];
         // console.log(html);
-       this.toggleButton.classList.remove('toggled');
+        this.toggleButton.classList.remove('toggled');
         this.sidebarVisible = false;
-       html.classList.remove('nav-open');
+        html.classList.remove('nav-open');
     };
     sidebarToggle() {
         // const toggleButton = this.toggleButton;
@@ -45,14 +48,28 @@ export class NavbarComponent implements OnInit {
             this.sidebarClose();
         }
     };
-  
+
     isDocumentation() {
         var titlee = this.location.prepareExternalUrl(this.location.path());
-        if( titlee === '/documentation' ) {
+        if (titlee === '/documentation') {
             return true;
         }
         else {
             return false;
         }
     }
+
+
+    public getAllMasterService() {
+        this.masterService.getAllMasterServices().subscribe((resp) => {
+          if (resp['status'] == 'success') {
+            this.MasterServiceList = resp['data'];
+            console.log(this.MasterServiceList);
+          } else {
+            console.log("Error : " + resp['message']);
+          }
+        });
+      }
+    
+
 }

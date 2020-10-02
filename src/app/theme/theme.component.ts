@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThemeComponent implements OnInit {
 
+ 
   constructor() { }
 
   ngOnInit() {
+    
   }
+
+  
 
 }

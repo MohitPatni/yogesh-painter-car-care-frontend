@@ -24,8 +24,8 @@
   content: " ";
   display: inline-block;
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height:20px;
   left: 0;
   cursor: pointer;
   border-radius: 3px;
@@ -123,3 +123,4 @@
 .form-check-radio input[type="radio"]:disabled + .form-check-sign::after {
   color: $dark-gray;
 }
+ 
