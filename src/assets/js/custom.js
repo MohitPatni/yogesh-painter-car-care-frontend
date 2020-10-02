@@ -3,7 +3,7 @@
 
 function owlCarousel() {
    
-    $(".owl-carousel")
+    $(".test-owal")
         .owlCarousel({
             loop: true,
             margin: 20,
@@ -14,18 +14,18 @@ function owlCarousel() {
             responsiveClass: true,
             responsive: {
                 0: {
-                    items: 1,
+                    items: 2,
                     nav: false,
                 },
                 400: {
-                    items: 2,
+                    items: 4,
                 },
                 600: {
-                    items: 3,
+                    items: 4,
                     nav: false,
                 },
                 1000: {
-                    items: 4,
+                    items: 7,
                     loop: false,
                 },
             },
@@ -36,33 +36,34 @@ function owlCarousel() {
 // Testimonial Carousel
 function testimonialOwlCarousel() {
     
-    $(".testimonial-content").owlCarousel({
-        loop: true,
-        margin: 20,
+    $('.wide-slider-testimonial').owlCarousel({
+        loop:true,
         autoplay: true,
-       
+        margin:0,
+       // animateOut: 'fadeOut',
+       // animateIn: 'fadeIn',
         nav: false,
-        dots: true,
-        lazyLoad: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false,
-            },
-            400: {
-                items: 1,
-            },
-            600: {
-                items: 1,
-                nav: false,
-            },
-            1000: {
-                items: 1,
-                loop: false,
-            },
-        },
-    });
+        
+        autoplayHoverPause: false, 
+        items: 1,
+        autoheight: true,
+        navText : ["<span class='ion-android-arrow-dropleft'></span>","<span class='ion-android-arrow-dropright'></span>"],
+        responsive:{
+          0:{
+            items:1,
+            nav:true
+          },
+          600:{
+            items:1,
+            nav:true
+          },
+          1000:{
+            items:1,
+            nav:true
+          }
+        }
+       
+      });
 
 }
  // Testimonial Carousel End

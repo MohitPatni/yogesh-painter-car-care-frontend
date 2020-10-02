@@ -285,63 +285,6 @@
   }
  
 
-  /*== Testimonial Area CSS Start ==*/
-
-  .single-testimonial {
-    background-color: #1e2228;
-    color: #fff;
-    font-weight: 600;
-    line-height: 2;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .single-testimonial::after {
-    background-color: #1e2228;
-    border-left: 4px solid #ffd000;
-    content: "";
-    height: 100%;
-    left: -48px;
-    position: absolute;
-    top: 0;
-    // -webkit-transform: skewX(-25deg);
-    // transform: skewX(-25deg);
-    width: 150px;
-    z-index: -1;
-  }
-  
-  
-  
-  .single-testimonial h3 {
-    color: #ffd000;
-    font-size: 15px;
-    margin-top: 10px;
-    text-transform: uppercase;
-  }
-  
-  .testimonial-content .owl-dots {
-    margin-top: 30px;
-    text-align: center;
-  }
-  
-  .testimonial-content .owl-dots div.owl-dot {
-    border: 1px solid #ffd000;
-    border-radius: 10px;
-    display: inline-block;
-    height: 5px;
-    //-webkit-transition: 0.2s;
-    transition: 0.2s;
-    margin: 0 5px;
-    width: 40px;
-  }
-  
-  .testimonial-content .owl-dots div.owl-dot.active {
-    background-color: #ffd000;
-  }
-  
-  
-  /*== Testimonial Area CSS End ==*/
-
 
 .section-padding {
 	padding: 100px 0;
@@ -441,8 +384,7 @@
 
 /* Feature Area css
 ============================================================================================ */
-.feature_area{
-}
+
 
 .feature_item{
 	background: #fff;
@@ -489,23 +431,45 @@
 	background: #f9f9ff;
 	.clients_slider{
 		.item{
-			text-align: center;
+		//	text-align: center;
 			img{
-				width: auto;
+			//	width: auto;
 				//text-align: center;
-				display: block;
+		//		display: block;
 				margin: auto;
-				line-height: 70px;
-				opacity: .5;
-			
+				line-height: 50px;
+      height: 100px;
+      width: 100px;
+			padding: 0px;
 			}
-			&:hover{
-				img{
-					opacity: 1;
-				} 
-			}
+		
 		}
 	}
 }
 /* End Clients Logo Area css
 ============================================================================================ */
+.testimonial-wrap {
+	.quote {
+		line-height: 1;
+		position: relative;
+		font-size: 100px;
+		color: black;
+		text-align: center;
+	}
+}
+
+.block-testomonial{text-align:center}
+.block-testomonial p
+{font-size:18px;
+  color:#000;
+  line-height:2
+}
+
+.testimonial-container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+  

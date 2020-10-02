@@ -9,10 +9,9 @@ import {Router} from '@angular/router'
 })
 export class AllServicesComponent implements OnInit {
   
-    constructor(private router: Router) {  this.router.url === '/login' }
+    constructor() {  }
     ngOnInit() {
-      this.router.url === '/login'
-      console.log(this.router.url)
+    
     }
     ngOnDestroy(){
         
