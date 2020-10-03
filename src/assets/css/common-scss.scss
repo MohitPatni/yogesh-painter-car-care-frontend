@@ -1,154 +1,94 @@
 
-// Color
-$red: #f07167;
-$orange: #fed9b7;
-$yellow: #fdfcdc;
-$green: #00afb9;
-$blue: #0081a7;
-$black: #5e6472;
-$white: #ebebeb;
-$background: white;
-
-// Font-size
-$default-size: 36;
-
-// Helper mixin
-@mixin center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.ftco-section {
+	padding: 8em 0;
+	position: relative;
+	@include media-breakpoint-down(sm){
+		padding: 6em 0;
+	}
 }
 
-// For globe changing animation
-@mixin showAndHide($showAt, $hideAt, $identifier, $first: false, $last: false, $duration: 6, $delay: 0) {
-    @if $last {
-      @keyframes showAndHide-#{$identifier} {
-        from {opacity: 0;}
-        #{percentage($showAt)} { opacity: 0; }
-        #{percentage($hideAt)} { opacity: 1; }
-        to {opacity: 1;}
-      }
-  } @else if $first {
-      @keyframes showAndHide-#{$identifier} {
-        #{percentage($showAt)} { opacity: 1; }
-        #{percentage($showAt + .05)} { opacity: 1; }
-        #{percentage($hideAt - .05)} { opacity: 1; }
-        #{percentage($hideAt)} { opacity: 0; }
-      }
-  } @else {
-      @keyframes showAndHide-#{$identifier} {
-        #{percentage($showAt)} { opacity: 0; }
-        #{percentage($showAt + .05)} { opacity: 1; }
-        #{percentage($hideAt - .05)} { opacity: 1; }
-        #{percentage($hideAt)} { opacity: 0; }
-      }
-    }
-  animation: showAndHide-#{$identifier} $duration + s $delay + s linear infinite;
+.ftco-bg-dark {
+	background: #1B5696;
 }
 
 
-
-
-@mixin wrench($rotateAngle, $duration: 3, $delay: 0) {
-  @keyframes wrench {
-    from {opacity: 0;}
-    6% {transform: rotate(-$rotateAngle + deg); opacity: 1;}
-    12% {transform: rotate($rotateAngle + deg)}
-    18% {transform: rotate(-$rotateAngle + deg)}
-    24% {transform: rotate($rotateAngle + deg)}
-    30% {transform: rotate(-$rotateAngle + deg); opacity: 1;}
-    33% { transform: rotate(0deg); opacity: 0; }
-  }
-  animation: wrench $duration  + s $delay + s linear infinite;
+.ftco-footer {
+	font-size: 16px;
+	background: $primary;
+	padding: 12em 0 8em 0;
+	.ftco-footer-logo {
+		text-transform: uppercase;
+		letter-spacing: .1em;
+	}
+	.ftco-footer-widget {
+		h2 {
+			font-weight: normal;
+			color: $white;
+			margin-bottom: 40px;
+			font-size: 18px;
+			font-weight: 400;
+		}
+		ul{
+			li{
+				a{
+					span{
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	p {
+		color: rgba($white, .7);
+	}
+	a {
+		color: rgba($white, .7);
+		&:hover {
+			color: $white;
+		}
+	}
+	.ftco-heading-2 {
+		font-size: 17px;
+		font-weight: 400;
+		color: $black;
+	}
 }
 
 
-
-
-
-
-
-// For motorcycle loader
-@mixin motorcycle($duration, $delay) {
-  @keyframes motorcycle {
-    from { transform: translate(200%); opacity: 0; }
-    12.5% { transform: translate(0%); opacity: 1; }
-    25% { transform: translate(-200%); opacity: 0;}
-    26% { opacity: 0 }
-    to { opacity: 0 }
-  }
-  animation: motorcycle $duration + s $delay + s linear infinite;
+.ftco-footer-social {
+	li {
+		list-style: none;
+		margin: 0 10px 0 0;
+		display: inline-block;
+		a {
+			height: 50px;
+			width: 50px;
+			display: block;
+			float: left;
+			background: rgba($white, .05);
+			border-radius: 50%;
+			position: relative;
+			span {
+				position: absolute;
+				font-size: 26px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:hover {
+				color: $white;
+			}
+		}
+	}
 }
-
-@mixin motorcycle-gas($duration, $delay) {
-  @keyframes motorcycle-gas {
-    from { opacity: 0; }
-    25% { opacity: 1; left: -80px; }
-    50% { opacity: 0; left: -100px; }
-    to { opacity: 0; }
-  }
-  animation: motorcycle-gas $duration + s $delay + s linear infinite;
+.footer-small-nav {
+	> li {
+		display: inline-block;
+		a {
+			margin: 0 10px 10px 0;
+			&:hover, &:focus {
+				color: $primary;
+			}
+		}
+	}
 }
-
-
-
-.container {
- 
-  
-  .l-container {
-    width: 33%;
-    min-height: 200px;
-    position: relative;
-    @include center;
-    
-   
-    
-    .motorcycle-container {
-      @include center;
-      position: absolute;
-      font-size: $default-size * 2 + px;
-      * {
-        position: absolute;
-        color: $black;
-        opacity: 0;
-      }
-      .motorcycle {
-        color: $red;
-        opacity: 1;
-      }
-      .wind {
-        opacity: 1;
-        font-size: $default-size / 1.2 + px;
-        transform: scaleX(-1);
-        left: -60px;
-        color: $orange;
-        @include motorcycle-gas(1, .5);
-      }
-      $default-offset: -45px;
-      $duration: 1.5;
-      $delay: $duration/4;
-      .building {
-        top: $default-offset;
-        @include motorcycle($duration, 0);
-      }
-      .city {
-        top: $default-offset;
-        color: $blue;
-        @include motorcycle($duration, $delay * 2);
-      }
-      .tree {
-        top: $default-offset;
-        color: $green;
-        @include motorcycle($duration, $delay);
-      }
-      .front {
-        @include motorcycle($duration, $delay * 3);
-      }
-    } // End of motorcycle loader
-    
-  
-    
-  }  // End of l-container
-}
-
-

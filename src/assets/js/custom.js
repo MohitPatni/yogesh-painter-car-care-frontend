@@ -14,7 +14,7 @@ function owlCarousel() {
             responsiveClass: true,
             responsive: {
                 0: {
-                    items: 2,
+                    items: 3,
                     nav: false,
                 },
                 400: {
@@ -25,7 +25,7 @@ function owlCarousel() {
                     nav: false,
                 },
                 1000: {
-                    items: 7,
+                    items: 8,
                     loop: false,
                 },
             },
@@ -67,3 +67,6 @@ function testimonialOwlCarousel() {
 
 }
  // Testimonial Carousel End
+
+
+ 

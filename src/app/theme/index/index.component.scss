@@ -30,9 +30,22 @@
  
 }
 
+.first_service.animate__animated.animate__fadeInUp{
+  --animate-duration: 1s;
+}
+
+.second_service.animate__animated.animate__fadeInUp{
+  --animate-duration: 1.5s;
+}
+
+.third_service.animate__animated.animate__fadeInUp{
+  --animate-duration: 2s;
+}
 
 
-
+.rm-ml-15{
+  margin-left: 0 !important;;
+}
 
 
 
@@ -188,6 +201,7 @@
     height: 75%;
     width: 90%;
     margin-left: 10%;
+    align-content: center;
   }
   
 
@@ -219,7 +233,7 @@
     
   }
   
-  /* Medium Device = 1200px */
+  /* Medium Device = 1200px * /
   
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
   
@@ -385,12 +399,12 @@
 /* Feature Area css
 ============================================================================================ */
 
-
 .feature_item{
 	background: #fff;
 	border-radius: 10px;
 	padding: 40px 60px 40px 40px;
-	margin-bottom: 30px;
+  margin-bottom: 30px;
+ 
 //	@include transition;
 	h4{
 		font-size: 18px;

@@ -48,6 +48,7 @@
     "rxjs": "6.5.4",
     "rxjs-compat": "6.5.4",
     "typescript": "3.7.5",
+    "waypoints": "^4.0.1",
     "zone.js": "0.10.2"
   },
   "devDependencies": {

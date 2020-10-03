@@ -6,8 +6,9 @@ import * as Rellax from 'rellax';
 import  {FeedbackService} from '../../service/feedback-service';
 import {FeedbackRespModel} from '../../response-model/feedback-resp-model';
 declare const owlCarousel: any;
-declare const testimonialOwlCarousel
-: any;
+declare const testimonialOwlCarousel: any;
+declare const counterJS: any;
+
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
@@ -25,7 +26,7 @@ export class IndexComponent implements OnInit {
       //this.getFeedback();
       owlCarousel();
       testimonialOwlCarousel();
-
+  
     }
     ngOnDestroy(){
        
