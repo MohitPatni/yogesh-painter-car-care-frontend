@@ -42,6 +42,9 @@
   --animate-duration: 2s;
 }
 
+.second_service.animate__animated.animate__zoomIn{
+  --animate-duration: 1.5s;
+}
 
 .rm-ml-15{
   margin-left: 0 !important;;
@@ -337,13 +340,14 @@
 
 .funfact-icon {
 	color: #1B5696;
-	font-size: 50px;
+  font-size: 50px;
+  
 }
 
 .funfact-icon,
 .funfact-content {
 	display: table-cell;
-	vertical-align: middle;
+vertical-align: middle;
 }
 
 .funfact-content {
@@ -442,7 +446,7 @@
 /* Clients Logo Area css
 ============================================================================================ */
 .clients_logo_area{
-	background: #f9f9ff;
+	background: #fff;
 	.clients_slider{
 		.item{
 		//	text-align: center;

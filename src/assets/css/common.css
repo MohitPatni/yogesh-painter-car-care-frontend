@@ -54,7 +54,9 @@ body.loader-active {
   .ftco-footer {
 	font-size: 16px;
 	background:  #1B5696;
-	padding: 12em 0 8em 0; }
+	/* padding: 12em 0 8em 0; */
+	padding: 4em 0 1em 0;
+ }
 	.ftco-footer .ftco-footer-logo {
 	  text-transform: uppercase;
 	  letter-spacing: .1em; }
