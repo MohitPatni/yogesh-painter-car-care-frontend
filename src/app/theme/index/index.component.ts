@@ -5,6 +5,8 @@ import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import * as Rellax from 'rellax';
 import  {FeedbackService} from '../../service/feedback-service';
 import {FeedbackRespModel} from '../../response-model/feedback-resp-model';
+
+
 declare const owlCarousel: any;
 declare const testimonialOwlCarousel: any;
 declare const counterJS: any;
@@ -15,7 +17,7 @@ declare const counterJS: any;
   styleUrls: ['./index.component.scss','../../../assets/css/common.css']
 })
 
-
+ 
 export class IndexComponent implements OnInit {
    
   feedbackList : Array<FeedbackRespModel>;
@@ -26,12 +28,15 @@ export class IndexComponent implements OnInit {
       //this.getFeedback();
       owlCarousel();
       testimonialOwlCarousel();
-  
+     
     }
     ngOnDestroy(){
        
     }
     
+
+   
+
     public getFeedback() {
       this.feedbackService.getAllFeedBack().subscribe((resp) => {
         if (resp['status'] == 'success') {

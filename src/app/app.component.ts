@@ -5,6 +5,7 @@ import 'rxjs/add/operator/filter';
 import { DOCUMENT } from '@angular/common';
 import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import * as AOS from 'aos';
 
 @Component({
     selector: 'app-root',
@@ -41,6 +42,17 @@ export class AppComponent implements OnInit {
                     //   navbar.classList.add('navbar-transparent');
                 }
             });
-        });
+        }); 
+
+      this.asoFun()
     }
+
+    public asoFun(){
+        AOS.init({
+          duration: 800,
+          easing: 'slide',
+          once: true
+        });
+        
+      }
 }
