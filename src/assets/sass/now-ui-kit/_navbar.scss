@@ -46,6 +46,7 @@
             font-size: $font-size-mini;
             padding: $padding-base-vertical $padding-base-horizontal;
             line-height: $line-height-nav-link;
+            cursor: pointer;
 
             i.fab + p,
             i.now-ui-icons + p{

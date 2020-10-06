@@ -21,7 +21,7 @@ const routes: Routes =[
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'examples/login',       component: LoginComponent },
     { path: 'examples/profile',     component: ProfileComponent },
-    { path: 'about_us',     component: AboutUsComponent },
+    { path: 'about_us',     component: AboutUsComponent }, 
     { path: 'contact_us',     component: ContactUsComponent },
     { path: 'car_denting_painting',     component: AllServicesComponent },
     { path: 'Body_polish',     component: AllServicesComponent },

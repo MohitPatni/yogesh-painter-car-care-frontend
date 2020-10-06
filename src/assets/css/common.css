@@ -42,11 +42,13 @@ body.loader-active {
 }
 
 .ftco-section {
-	padding: 8em 0;
+/* padding: 8em 0; */
+padding: 3em 3em 0;
 	position: relative; }
 	@media (max-width: 767.98px) {
 	  .ftco-section {
-		padding: 6em 0; } }
+		  /* padding: 6em 0 */
+		padding: 3em 0 3em 0; } }
   
   .ftco-bg-dark {
 	background:  #1B5696; }

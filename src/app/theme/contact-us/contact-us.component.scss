@@ -8,6 +8,60 @@
         box-shadow: none;
 }
 
+.contact-section {
+	.contact-info{
+		p{
+			a{color: #000;
+				// color: lighten($black,10%);
+			}
+	
+		}
+	}
+	.box{
+		width: 100%;
+		display: block;
+		 border-radius : 4px;
+	
+			margin-bottom: 30px;
+		
+		.icon{
+			width: 100px;
+			height: 100px;
+			background: rgba(255,255,255,1);
+			margin: 0 auto;
+			margin-bottom: 2em;
+		 border-radius :50%;
+			span{
+				color:  #1B5696;
+				font-size: 40px;
+			}
+		}
+		h3{
+			font-size: 17px;
+			font-weight: 550;
+			text-transform: uppercase;
+		}
+	}
+	.contact-form{
+		width: 100%;
+	}
+}
+.block-9 {
+
+	.form-control {
+		outline: none!important;
+		box-shadow: none!important;
+		font-size: 15px;
+	}
+	#map {
+	}
+}
+
+.ftco-section {
+  padding: 3em 0 3em 0;
+}
+
+
 
 
 
