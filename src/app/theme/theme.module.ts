@@ -12,6 +12,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { IndexComponent } from './index/index.component';
 import { AllServicesComponent } from './all-services/all-services.component';
 import {ThemeComponent} from './theme.component'
+import { AllServicesModule } from './all-services/all-services.module';
 
 @NgModule({
     imports: [
@@ -19,6 +20,7 @@ import {ThemeComponent} from './theme.component'
         FormsModule,
         NgbModule,
         NouisliderModule,
+        AllServicesModule,
         JwBootstrapSwitchNg2Module,
         AgmCoreModule.forRoot({
             apiKey: 'YOUR_KEY_HERE'
@@ -30,7 +32,7 @@ import {ThemeComponent} from './theme.component'
         IndexComponent,
         ThemeComponent,
         FooterComponent,
-        AllServicesComponent,
+       
         
     ]
 })

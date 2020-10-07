@@ -43,4 +43,4 @@ import {AllServicesComponent} from './all-services.component'
         
     ]
 })
-export class ThemeModule { }
+export class AllServicesModule { }
