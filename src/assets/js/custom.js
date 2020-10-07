@@ -1,5 +1,5 @@
 
-
+ 
 function owlCarousel() {
    
     $(".test-owal")
@@ -65,4 +65,4 @@ function testimonialOwlCarousel() {
       });
 
 }
- // Testimonial Carousel End
+ // Testimonial Carousel End 

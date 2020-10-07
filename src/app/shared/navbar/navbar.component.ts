@@ -1,6 +1,9 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { MasterService } from '../../service/master-services.service';
+import { Router, Routes, RouterModule } from '@angular/router'
+import { AllServicesComponent } from '../../theme/all-services/all-services.component'
+import { AppRoutingModule } from '../../app.routing'
 @Component({
     selector: 'app-navbar',
     templateUrl: './navbar.component.html',
@@ -9,10 +12,11 @@ import { MasterService } from '../../service/master-services.service';
 export class NavbarComponent implements OnInit {
     private toggleButton: any;
     private sidebarVisible: boolean;
-    MasterServiceList : any;
+    masterServiceList: any;
 
 
-    constructor(public location: Location, private element: ElementRef, private masterService: MasterService) {
+    constructor(public location: Location, private element: ElementRef,
+        private masterService: MasterService, private router: Router, private appRoutingModule: AppRoutingModule) {
         this.sidebarVisible = false;
     }
 
@@ -20,7 +24,7 @@ export class NavbarComponent implements OnInit {
         const navbar: HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
 
-        //this.getAllMasterService();
+       // this.getAllMasterService();
     }
     sidebarOpen() {
         const toggleButton = this.toggleButton;
@@ -62,14 +66,14 @@ export class NavbarComponent implements OnInit {
 
     public getAllMasterService() {
         this.masterService.getAllMasterServices().subscribe((resp) => {
-          if (resp['status'] == 'success') {
-            this.MasterServiceList = resp['data'];
-            console.log(this.MasterServiceList);
-          } else {
-            console.log("Error : " + resp['message']);
-          }
+            if (resp['status'] == 'success') {
+                this.masterServiceList = resp['data'];
+                console.log(this.masterServiceList);
+            } else {
+                console.log("Error : " + resp['message']);
+            }
         });
-      }
-    
+    }
+  
 
 }

@@ -5,13 +5,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
-import { ExamplesModule } from './examples/examples.module';
+
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ThemeModule } from './theme/theme.module';
 import { BrowserModule } from '@angular/platform-browser';  
 import { HttpClientModule } from '@angular/common/http';
+import { AllServicesComponent } from './theme/all-services/all-services.component';
 
 
 @NgModule({
@@ -29,8 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule,
+       
         ThemeModule,
+        
         
         
     ],
