@@ -1,32 +1,21 @@
-// .card{
-//     border-radius: 25px;
-// }
-
 .blockquote {
   box-shadow: 10px 10px 5px #88888880;
   border-radius: 25px;
   background: #6c757d2e;
-
-
 }
-
 
 .blockquote-center {
   box-shadow: 0px 0px 0px #ffffff;
   border-radius: 0px;
   background: #ffffff;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
 .avatar {
-
   width: 100px;
   height: 100px;
   background: #ffff;
-
-
 }
 
 .first_service.animate__animated.animate__fadeInUp {
@@ -47,39 +36,24 @@
 
 .rm-ml-15 {
   margin-left: 0 !important;
-  ;
 }
-
-
-
-
-
-
-
-
 
 /* Carousel base class */
 .carousel {
   margin-bottom: 2rem;
-
 }
 
-//   /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
-
-
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 33rem;
-
 }
 
-.carousel-item>img {
-
+.carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -91,24 +65,13 @@
   max-height: 850px !important;
   box-shadow: none;
   border-color: blue;
-
 }
-
-
 
 .our-services .card {
   border-radius: 0px;
   box-shadow: 0px 0px 0px white;
   border-color: blue;
-
 }
-
-
-
-
-
-
-
 
 * {
   box-sizing: border-box;
@@ -132,22 +95,15 @@
   clear: both;
 }
 
-
-
 /* Style the counter cards */
 .counter-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: #444;
-  // background-color: #1B5696;
   color: white;
 }
 
-
-
-
-// ###################
 .chooseus {
   background: #f7f7f7;
   position: relative;
@@ -204,8 +160,6 @@
   align-content: center;
 }
 
-
-
 .spad {
   padding-top: 70px;
   padding-bottom: 50px;
@@ -230,28 +184,22 @@
   background-position: top center;
 }
 
-@media only screen and (min-width: 1200px) {}
-
 /* Medium Device = 1200px * /
-  
+
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  
+
     .chooseus {
       height: auto;
     }
-   
+
     .single-funfact {
       margin-bottom: 0;
     }
-    
+
   }
-  
+
 
 /* Wide Mobile = 480px */
-
-
-
-
 .section-padding {
   padding: 100px 0;
 }
@@ -273,7 +221,6 @@
 }
 
 /*== Fun Fact Area CSS Start ==*/
-
 #funfact-area {
   background-image: url(assets/img/counter-bg.jpg);
   background-size: cover;
@@ -286,13 +233,11 @@
   background-color: rgba(0, 0, 0, 0.6);
   padding: 25px 40px;
   text-align: center;
-  //margin-left: 35px!important;
 }
 
 .funfact-icon {
   color: #1B5696;
   font-size: 50px;
-
 }
 
 .funfact-icon,
@@ -315,7 +260,6 @@
 }
 
 /*== Fun Fact Area CSS End ==*/
-
 /* Furniture Area css
 ============================================================================================ */
 .furniture_area {
@@ -328,127 +272,93 @@
 
 .furniture_item {
   margin-bottom: 30px;
-
-  img {
-    border-radius: 5px;
-  }
-
-  h4 {
-    font-size: 18px;
-    text-transform: uppercase;
-    //font-family: $hee;
-    font-weight: bold;
-    //	color: $dip;
-    margin-top: 25px;
-    margin-bottom: 12px;
-    // @include transition;
-  }
-
-  p {
-    margin-bottom: 0px;
-  }
-
-  &:hover {
-    h4 {
-      color: #1B5696;
-    }
-  }
+}
+.furniture_item img {
+  border-radius: 5px;
+}
+.furniture_item h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+.furniture_item p {
+  margin-bottom: 0px;
+}
+.furniture_item:hover h4 {
+  color: #1B5696;
 }
 
 /* End Furniture Area css
 ============================================================================================ */
-
 /* Feature Area css
 ============================================================================================ */
-
 .feature_item {
   background: #fff;
   border-radius: 10px;
   padding: 40px 60px 40px 40px;
   margin-bottom: 30px;
-
-  //	@include transition;
-  h4 {
-    font-size: 18px;
-    //color: $dip;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    //	@include transition;
-    position: relative;
-
-    i {
-      font-size: 24px;
-      padding-right: 15px;
-      font-weight: 600;
-      position: absolute;
-      left: 0px;
-      top: 40%;
-      transform: translateY(-50%);
-    }
-  }
-
-  p {
-    margin-bottom: 0px;
-  }
-
-  &:hover {
-    background: #fff;
-    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
-
-    p.h4 {
-      color: #1B5696;
-    }
-  }
+}
+.feature_item h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+.feature_item h4 i {
+  font-size: 24px;
+  padding-right: 15px;
+  font-weight: 600;
+  position: absolute;
+  left: 0px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.feature_item p {
+  margin-bottom: 0px;
+}
+.feature_item:hover {
+  background: #fff;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.feature_item:hover p.h4 {
+  color: #1B5696;
 }
 
 /* End Feature Area css
 ============================================================================================ */
-
-
 /* Clients Logo Area css
 ============================================================================================ */
 .clients_logo_area {
   background: #fff;
-
-  .clients_slider {
-    .item {
-
-      //	text-align: center;
-      img {
-        //	width: auto;
-        //text-align: center;
-        //		display: block;
-        margin: auto;
-        line-height: 50px;
-        height: 50px;
-        width: 50px;
-        padding: 0px;
-      }
-
-    }
-  }
+}
+.clients_logo_area .clients_slider .item img {
+  margin: auto;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  padding: 0px;
 }
 
 /* End Clients Logo Area css
 ============================================================================================ */
-.testimonial-wrap {
-  .quote {
-    line-height: 1;
-    position: relative;
-    font-size: 100px;
-    color: black;
-    text-align: center;
-  }
+.testimonial-wrap .quote {
+  line-height: 1;
+  position: relative;
+  font-size: 100px;
+  color: black;
+  text-align: center;
 }
 
 .block-testomonial {
-  text-align: center
+  text-align: center;
 }
 
 .block-testomonial p {
   font-size: 18px;
   color: #000;
-  line-height: 2
+  line-height: 2;
 }
 
 .testimonial-container {
@@ -459,50 +369,32 @@
   margin-left: auto;
 }
 
-
 .testmonial_area {
   padding-top: 0px;
   padding-bottom: 150px;
-
-  // @media #{$mobile_device} {
-  //     padding-bottom: 50px;
-  // }
-  .slider-nav {
-    div {
-
-      img {
-        width: 100%;
-      }
-    }
-  }
-
-  .single_slider {
-    p {
-      font-size: 20px;
-      line-height: 32px;
-      color: #727272;
-      font-weight: 400;
-      text-decoration: underline;
-      margin-bottom: 24px;
-    }
-
-    h4 {
-      font-size: 16px;
-      color: #2C2C2C;
-      font-weight: 400;
-      text-transform: uppercase;
-    }
-
-    span {
-      color: #727272;
-      font-size: 14px;
-    }
-  }
+}
+.testmonial_area .slider-nav div img {
+  width: 100%;
+}
+.testmonial_area .single_slider p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #727272;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-bottom: 24px;
+}
+.testmonial_area .single_slider h4 {
+  font-size: 16px;
+  color: #2C2C2C;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.testmonial_area .single_slider span {
+  color: #727272;
+  font-size: 14px;
 }
 
-// Testimonial End /////////////////////////////////////////////////////////////
-
-//Contact Us Banner Start
 .roberto-cta-area {
   position: relative;
   z-index: 1;
@@ -552,10 +444,10 @@
   z-index: 0;
 }
 
-.jarallax>.jarallax-img {
+.jarallax > .jarallax-img {
   position: absolute;
   object-fit: cover;
-  font-family: 'object-fit: cover';
+  font-family: "object-fit: cover";
   top: 0;
   left: 0;
   width: 100%;
@@ -611,39 +503,29 @@
 .roberto-cta-area {
   position: relative;
   z-index: 1;
-
-  .cta-content {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .cta-text {
-    h2 {
-      color:  #fff;
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    h6 {
-      margin-bottom: 0;
-      color: #fff;
-    }
-  }
 }
+.roberto-cta-area .cta-content {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.roberto-cta-area .cta-text h2 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.roberto-cta-area .cta-text h6 {
+  margin-bottom: 0;
+  color: #fff;
+}
+
 .align-items-center {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-//Contact Us Banner End
-
-
-
-
 @media only screen and (max-width: 767px) {
-
   .chooseus {
     height: auto;
     padding-bottom: 0;
@@ -671,96 +553,76 @@
   /* Carousel base class */
   .carousel {
     margin-bottom: 2rem;
-
   }
 
-  //   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
   }
 
-
-
   /* Declare heights because of positioning of img element */
   .carousel-item {
     height: 33rem;
-
   }
 
-  .carousel-item>img {
-
+  .carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     height: 33rem;
   }
-
-
 }
-
-  /* Tablet Device = 768px */
-
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-
-    .chooseus {
-      height: auto;
-      padding-bottom: 0;
-    }
-  
-    .chooseus__video {
-      height: 100%;
-      width: 100%;
-      position: relative;
-    }
-  
-    .chooseus__text {
-      margin-bottom: 40px;
-    }
-  
-    .single-funfact {
-      margin-bottom: 50px;
-      margin-left: 35px !important;
-    }
-  
-    .funfact-content-wrap .col-lg-4:last-child .single-funfact {
-      margin-bottom: 0;
-    }
-  
-    /* Carousel base class */
-    .carousel {
-      margin-bottom: 2rem;
-  
-    }
-  
-    //   /* Since positioning the image, we need to help out the caption */
-    .carousel-caption {
-      bottom: 3rem;
-      z-index: 10;
-    }
-  
-  
-  
-    /* Declare heights because of positioning of img element */
-    .carousel-item {
-      height: 33rem;
-  
-    }
-  
-    .carousel-item>img {
-  
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 33rem;
-    }
-  
-  
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .chooseus {
+    height: auto;
+    padding-bottom: 0;
   }
-  
-  /* Responsive columns */
+
+  .chooseus__video {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .chooseus__text {
+    margin-bottom: 40px;
+  }
+
+  .single-funfact {
+    margin-bottom: 50px;
+    margin-left: 35px !important;
+  }
+
+  .funfact-content-wrap .col-lg-4:last-child .single-funfact {
+    margin-bottom: 0;
+  }
+
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 2rem;
+  }
+
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 33rem;
+  }
+
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 33rem;
+  }
+}
+/* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -771,31 +633,23 @@
   /* Carousel base class */
   .carousel {
     margin-bottom: 2rem;
-
   }
 
-  //   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
   }
 
-
-
   /* Declare heights because of positioning of img element */
   .carousel-item {
     height: 33rem;
-
   }
 
-  
-  .carousel-item>img {
-
+  .carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     height: 33rem;
   }
-
 }

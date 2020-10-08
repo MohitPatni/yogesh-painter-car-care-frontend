@@ -1,7 +1,5 @@
 .navbar.navbar-transparent {
   background-color: #1b5696 !important;
-
-  // #f96332
 }
 
 .dropdown-menu .dropdown-item:focus,
@@ -10,25 +8,5 @@
   color: white;
 }
 
-
-
-
-
-
-@media only screen and (max-width: 767px) {
-
-
-}
-
 /* Tablet Device = 768px */
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-
-}
-
 /* Responsive columns */
-@media screen and (max-width: 600px) {
-
-
-}

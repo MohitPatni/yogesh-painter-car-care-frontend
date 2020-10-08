@@ -1,60 +1,66 @@
-.border-primary{
-   border-color: #1B5696 !important;
+.border-primary {
+  border-color: #1B5696 !important;
 }
 
-.card-body-height{
-    height: 55px ;
-        min-height: 0px  !important;
-        box-shadow: none;
+.card-body-height {
+  height: 55px;
+  min-height: 0px !important;
+  box-shadow: none;
 }
 
 .contact-section {
-	.contact-info{
-		p{
-			a{color: #000;
-				// color: lighten($black,10%);
-			}
-	
-		}
-	}
-	.box{ 
-		width: 100%;
-		display: block;
-		 border-radius : 50px;
-	
-			margin-bottom: 30px;
-		
-		.icon{
-			width: 100px;
-			height: 100px;
-			background: rgba(255,255,255,1);
-			margin: 0 auto;
-			margin-bottom: 2em;
-		 border-radius :50%;
-			span{
-				color:  #1B5696;
-				font-size: 40px;
-			}
-		}
-		h3{
-			font-size: 17px;
-			font-weight: 550;
-			text-transform: uppercase;
-		}
-	}
-	.contact-form{
-		width: 100%;
-	}
+  .contact-info {
+    p {
+      a {
+        color: #000;
+        // color: lighten($black,10%);
+      }
+
+    }
+  }
+
+  .box {
+    width: 100%;
+    display: block;
+    border-radius: 50px;
+
+    margin-bottom: 30px;
+
+    .icon {
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 1);
+      margin: 0 auto;
+      margin-bottom: 2em;
+      border-radius: 50%;
+
+      span {
+        color: #1B5696;
+        font-size: 40px;
+      }
+    }
+
+    h3 {
+      font-size: 17px;
+      font-weight: 550;
+      text-transform: uppercase;
+    }
+  }
+
+  .contact-form {
+    width: 100%;
+  }
 }
+
 .block-9 {
 
-	.form-control {
-		outline: none!important;
-		box-shadow: none!important;
-		font-size: 15px;
-	}
-	#map {
-	}
+  .form-control {
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 15px;
+  }
+
+  #map {}
 }
 
 .ftco-section {
@@ -69,24 +75,24 @@
 
 /*---------------------------------------------*/
 a {
-	font-family: Montserrat-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
 
 a:focus {
-	outline: none !important;
+  outline: none !important;
 }
 
 a:hover {
-	text-decoration: none;
-	color: #57b846;
+  text-decoration: none;
+  color: #57b846;
 }
 
 /*---------------------------------------------*/
@@ -110,52 +116,93 @@ a:hover {
 
 /*---------------------------------------------*/
 input {
-	outline: none;
-	border: none;
-}
-
-textarea {
   outline: none;
   border: none;
 }
 
-textarea:focus, input:focus {
+
+textarea:focus,
+input:focus {
   border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
 
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder {
+  color: transparent;
+}
 
-input::-webkit-input-placeholder { color: #aaaaaa; }
-input:-moz-placeholder { color: #aaaaaa; }
-input::-moz-placeholder { color: #aaaaaa; }
-input:-ms-input-placeholder { color: #aaaaaa; }
+input:focus::-moz-placeholder {
+  color: transparent;
+}
 
-textarea::-webkit-input-placeholder { color: #aaaaaa; }
-textarea:-moz-placeholder { color: #aaaaaa; }
-textarea::-moz-placeholder { color: #aaaaaa; }
-textarea:-ms-input-placeholder { color: #aaaaaa; }
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+
+input:-moz-placeholder {
+  color: #aaaaaa;
+}
+
+input::-moz-placeholder {
+  color: #aaaaaa;
+}
+
+input:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+
+textarea:-moz-placeholder {
+  color: #aaaaaa;
+}
+
+textarea::-moz-placeholder {
+  color: #aaaaaa;
+}
+
+textarea:-ms-input-placeholder {
+  color: #aaaaaa;
+}
 
 /*---------------------------------------------*/
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-	border: none !important;
+  border: none !important;
 }
 
 
@@ -165,14 +212,14 @@ iframe {
 [ Contact ]*/
 
 .bg-contact100 {
-  width: 100%;  
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .container-contact100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -185,7 +232,8 @@ iframe {
   padding: 15px;
   //background: rgba(132,106,221,0.9);
   background: #1B5696;
-  border-radius: 15px;;
+  border-radius: 15px;
+  ;
 }
 
 .wrap-contact100 {
@@ -280,10 +328,10 @@ textarea.input100 {
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 0px 0px;
-  color: rgba(132,106,221, 0.5);
+  color: rgba(132, 106, 221, 0.5);
 }
 
-.input100:focus + .focus-input100 {
+.input100:focus+.focus-input100 {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
@@ -326,7 +374,7 @@ textarea.input100 {
   transition: all 0.4s;
 }
 
-.input100:focus + .focus-input100 + .symbol-input100 {
+.input100:focus+.focus-input100+.symbol-input100 {
   color: #1B5696;
   padding-left: 22px;
 }
@@ -373,81 +421,6 @@ textarea.input100 {
   background: #333333;
 }
 
-/*------------------------------------------------------------------
-[ Responsive ]*/
-
-@media (max-width: 1200px) {
-  .contact100-pic {
-    width: 33.5%;
-  }
-
-  .contact100-form {
-    width: 44%;
-  }
-}
-
-@media (max-width: 992px) {
-  .wrap-contact100 {
-    padding: 30px 80px 50px 90px;
-  }
-
-  .contact100-pic {
-    width: 35%;
-  }
-
-  .contact100-form {
-    width: 55%;
-  }
-}
-
-@media (max-width: 768px) {
-  .wrap-contact100 {
-    padding: 30px 80px 50px 80px;
-  }
-
-  // .contact100-pic {
-  //   display: none;
-  // }
-
-  .contact100-form {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .wrap-contact100 {
-    padding: 80px 15px 50px 15px;
-  }
-
-  form.contact100-form.validate-form.ng-untouched.ng-pristine.ng-valid {
-      margin-top: 120px;
-      margin-left: 0%;
-  }
-
-  .contact {
-    height: 0px !important;
-  }
-
-  .contact .envelope {
-    position: absolute;
-    height: 93px;
-    width: 165px;
-    left: 70% !important;
-    margin-left: 0 !important;
-    top: 0% !important;
-    margin-top: 0 !important;
-    transition: margin-top 300ms;
-    -ms-transition: margin-top 300ms;
-    -moz-transition: margin-top 300ms;
-    -o-transition: margin-top 300ms;
-    -webkit-transition: margin-top 300ms;
-}
-
-}
-
-
-/*------------------------------------------------------------------
-[ Alert validate ]*/
 
 .validate-input {
   position: relative;
@@ -529,26 +502,27 @@ textarea.input100 {
 .text-white span,
 .text-white li,
 .text-white a {
-	color: #fff;
+  color: #fff;
 }
 
 .set-bg {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
+
 @media only screen and (min-width: 1200px) {
-	.container {
-		max-width: 1170px;
-	}
+  .container {
+    max-width: 1170px;
+  }
 }
 
 /* Medium Device = 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.header__menu ul li {
-		margin-right: 32px;
-	}
+  .header__menu ul li {
+    margin-right: 32px;
+  }
 
 
 
@@ -556,64 +530,59 @@ textarea.input100 {
 
 /* Tablet Device = 768px */
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	
-
-	
-}
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
 
 /* Wide Mobile = 480px */
 
-@media only screen and (max-width: 767px) {
-		
+@media only screen and (max-width: 767px) {}
+
+
+.form-check::-webkit-scrollbar {
+  width: 8px;
 }
 
-  
-  .form-check::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  .form-check::-webkit-scrollbar-track {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-  }
-  
-  .form-check::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background:  #1B5696;
-  }
-  
-  .form-check::-webkit-scrollbar-thumb:window-inactive {
-    background: #eaeaea;
-  }
-  .form-check::-webkit-scrollbar:vertical {
-    width: 10px;
-  }
+.form-check::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.form-check::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #1B5696;
+}
+
+.form-check::-webkit-scrollbar-thumb:window-inactive {
+  background: #eaeaea;
+}
+
+.form-check::-webkit-scrollbar:vertical {
+  width: 10px;
+}
 
 .form-check {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    overflow-y: scroll;
-   height: 150px;
-   background-color: #e6e6e6;   
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    padding: 14px 30px;
-    
-}
-.form-check .form-check-label{
-    width: 100%;
-    padding-bottom: 10px;
-    
-}
-.b-radius{
-    
+  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 150px;
+  background-color: #e6e6e6;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 14px 30px;
+
 }
 
+.form-check .form-check-label {
+  width: 100%;
+  padding-bottom: 10px;
+
+}
+
+.b-radius {}
+
 .form-check .form-check-sign::before,
-.form-check .form-check-sign::after{
-  
+.form-check .form-check-sign::after {
+
   background-color: transparent;
   border: 1px solid #000000;
   height: 15px;
@@ -621,13 +590,13 @@ textarea.input100 {
   margin-top: 5px;
 }
 
-.form-check .form-check-sign::after{
-   
-    content: "";
-    background-color: #1B5696;
-  }
+.form-check .form-check-sign::after {
 
-  /// Envelop
+  content: "";
+  background-color: #1B5696;
+}
+
+/// Envelop
 //   #bg {
 // 		position: absolute;
 // 		left: 0px;
@@ -637,220 +606,356 @@ textarea.input100 {
 // 		background: #ffffff; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2JiYmJiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==); background: -moz-radial-gradient(center, ellipse cover,  #ffffff 40%, #bbbbbb 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(40%,#ffffff), color-stop(100%,#bbbbbb)); background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -o-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -ms-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: radial-gradient(ellipse at center,  #ffffff 40%,#bbbbbb 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bbbbbb',GradientType=1 );
 // }
 .contact {
-		position: absolute;
-		// left: 50%;
-		// top: 50%;
-		// margin-left: -125px;
-		// margin-top: -125px;
-		height: 400px;
-		width: 135px;
-		
-		border-radius: 2px;
-		-ms-border-radius: 2px;
-		-moz-border-radius: 2px;
-		-o-border-radius: 2px;
-		-webkit-border-radius: 2px;
+  position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // margin-left: -125px;
+  // margin-top: -125px;
+  height: 400px;
+  width: 135px;
+
+  border-radius: 2px;
+  -ms-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -webkit-border-radius: 2px;
 }
+
 .contact .envelope {
-		position: absolute;
-		height: 93px;
-		width: 165px;
-		left: 50%;
-		margin-left: -83px;
-		top: 50%;
-		margin-top: -50px;
-		// background: #F9F9F9;
-		
-		transition: margin-top 300ms;
-		-ms-transition: margin-top 300ms;
-		-moz-transition: margin-top 300ms;
-		-o-transition: margin-top 300ms;
-		-webkit-transition: margin-top 300ms;
+  position: absolute;
+  height: 93px;
+  width: 165px;
+  left: 50%;
+  margin-left: -83px;
+  top: 50%;
+  margin-top: -50px;
+  // background: #F9F9F9;
+
+  transition: margin-top 300ms;
+  -ms-transition: margin-top 300ms;
+  -moz-transition: margin-top 300ms;
+  -o-transition: margin-top 300ms;
+  -webkit-transition: margin-top 300ms;
 }
+
 .contact:hover .envelope {
-		transition-delay: 150ms;
-		-ms-transition-delay: 150ms;
-		-moz-transition-delay: 150ms;
-		-o-transition-delay: 150ms;
-		margin-top: -20px;
+  transition-delay: 150ms;
+  -ms-transition-delay: 150ms;
+  -moz-transition-delay: 150ms;
+  -o-transition-delay: 150ms;
+  margin-top: -20px;
 }
+
 .contact .envelope .top {
-		position: absolute;
-		top: -3px;
-		left: 0px;
-		width: 100%;
-		height: 73px;
-		z-index: 30;
-		overflow: hidden;
-						
-		transform-origin: top;
-		-ms-transform-origin: top;
-		-moz-transform-origin: top;
-		-o-transform-origin: top;
-		-webkit-transform-origin: top;
-					
-		transition: transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
-		-ms-transition: -ms-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
-		-moz-transition: -moz-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
-		-o-transition: -o-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
-		-webkit-transition: -webkit-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  width: 100%;
+  height: 73px;
+  z-index: 30;
+  overflow: hidden;
+
+  transform-origin: top;
+  -ms-transform-origin: top;
+  -moz-transform-origin: top;
+  -o-transform-origin: top;
+  -webkit-transform-origin: top;
+
+  transition: transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
+  -ms-transition: -ms-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
+  -moz-transition: -moz-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
+  -o-transition: -o-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
+  -webkit-transition: -webkit-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
 }
+
 .contact:hover .envelope .top {
-		transition: transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-		-ms-transition: -ms-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-		-moz-transition: -moz-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-		-o-transition: -o-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-		-webkit-transition: -webkit-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-		
-		height: 10px;
-		top: -60px;
-		
-		transform: rotateX(180deg);
-		-ms-transform: rotateX(180deg);
-		-moz-transform: rotateX(180deg);
-		-o-transform: rotateX(180deg);
-		-webkit-transform: rotateX(180deg);
+  transition: transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
+  -ms-transition: -ms-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
+  -moz-transition: -moz-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
+  -o-transition: -o-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
+  -webkit-transition: -webkit-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
+
+  height: 10px;
+  top: -60px;
+
+  transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
 }
+
 .contact .envelope .outer {
-		position: absolute;
-		bottom: 0px;
-		left: 0px;
-		border-left: 83px solid transparent;
-		border-right: 82px solid transparent;
-		border-top: 70px solid #EEE;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-left: 83px solid transparent;
+  border-right: 82px solid transparent;
+  border-top: 70px solid #EEE;
 }
+
 .contact .envelope .outer .inner {
-		position: absolute;
-		left: -81px;
-		top: -73px;
-		border-left: 81px solid transparent;
-		border-right: 80px solid transparent;
-		border-top: 68px solid #1b5696;
+  position: absolute;
+  left: -81px;
+  top: -73px;
+  border-left: 81px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 68px solid #1b5696;
 }
+
 .contact .envelope .bottom {
-		position: absolute;
-		z-index: 20;
-		bottom: 0px;
-		left: 2px;
-		border-left: 81px solid transparent;
-		border-right: 80px solid transparent;
-		border-bottom: 45px solid #1b5696;
+  position: absolute;
+  z-index: 20;
+  bottom: 0px;
+  left: 2px;
+  border-left: 81px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 45px solid #1b5696;
 }
+
 .contact .envelope .left {
-		position: absolute;
-		z-index: 20; top: 0px;
-		left: 0px;
-		border-left: 81px solid #1b5696;
-		border-top: 45px solid transparent;
-		border-bottom: 45px solid transparent;
+  position: absolute;
+  z-index: 20;
+  top: 0px;
+  left: 0px;
+  border-left: 81px solid #1b5696;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
 }
+
 .contact .envelope .right {
-    position: absolute;
-    z-index: 20;
-    top: 0px;
-    right: 0px;
-    border-right: 80px solid #1b5696;
-    border-top: 45px solid transparent;
-    border-bottom: 45px solid transparent;
+  position: absolute;
+  z-index: 20;
+  top: 0px;
+  right: 0px;
+  border-right: 80px solid #1b5696;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
 }
+
 .contact .envelope .cover {
-		position: absolute;
-		z-index: 15;
-		bottom: 0px;
-		left: 0px;
-		height: 55%;
-		width: 100%;
-		background: #EEE;
+  position: absolute;
+  z-index: 15;
+  bottom: 0px;
+  left: 0px;
+  height: 55%;
+  width: 100%;
+  background: #EEE;
 }
+
 .contact .envelope .paper {
-		position: absolute;
-		height: 83px;
-		padding-top: 10px;
-		width: 100%;
-		top: 0px;
-		left: 0px;
-    background: #e6e6e6;
-    border-radius:20px;
-		z-index: 10;
-		transition: margin-top 300ms 0ms;
-		-ms-transition: margin-top 300ms 0ms;
-		-moz-transition: margin-top 300ms 0ms;
-		-o-transition: margin-top 300ms 0ms;
-		-webkit-transition: margin-top 300ms 0ms;
+  position: absolute;
+  height: 83px;
+  padding-top: 10px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: #e6e6e6;
+  border-radius: 20px;
+  z-index: 10;
+  transition: margin-top 300ms 0ms;
+  -ms-transition: margin-top 300ms 0ms;
+  -moz-transition: margin-top 300ms 0ms;
+  -o-transition: margin-top 300ms 0ms;
+  -webkit-transition: margin-top 300ms 0ms;
 }
+
 .contact:hover .envelope .paper {
-		margin-top: -60px;
-		transition: margin-top 300ms 150ms;
-		-ms-transition: margin-top 300ms 150ms;
-		-moz-transition: margin-top 300ms 150ms;
-		-o-transition: margin-top 300ms 150ms;
-		-webkit-transition: margin-top 300ms 150ms;
+  margin-top: -60px;
+  transition: margin-top 300ms 150ms;
+  -ms-transition: margin-top 300ms 150ms;
+  -moz-transition: margin-top 300ms 150ms;
+  -o-transition: margin-top 300ms 150ms;
+  -webkit-transition: margin-top 300ms 150ms;
 }
+
 .contact .envelope .paper a {
-		position: relative;
-		display: block;
-		font-size: 14px;
-		margin: 5px;
-		margin-bottom: 0px;
-		text-align: center;
-		color: #333;
-		text-decoration: none;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  margin: 5px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
 }
+
 .contact .envelope .paper a.call .i {
-		position: absolute;
-		top: 2px;
-		left: 20px;
-		display: inline-block;
-		width: 3px;
-		height: 5px;
-		border-width: 5px 0 5px 2px;
-		border-style: solid;
-		border-color: #555;
-		background: transparent;
-		
-		transform: rotate(-30deg);
-		-ms-transform: rotate(-30deg);
-		-moz-transform: rotate(-30deg);
-		-o-transform: rotate(-30deg);
-		-webkit-transform: rotate(-30deg);
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  display: inline-block;
+  width: 3px;
+  height: 5px;
+  border-width: 5px 0 5px 2px;
+  border-style: solid;
+  border-color: #555;
+  background: transparent;
 
-		border-top-left-radius: 3px 5px;
-		border-bottom-left-radius: 3px 5px;
-		-moz-border-radius-topleft: 3px 5px;
-		-moz-border-radius-bottomleft: 3px 5px;
-		-webkit-border-top-left-radius: 3px 5px;
-		-webkit-border-bottom-left-radius: 3px 5px;
-																																				
-		transition: border-color 300ms;
-		-ms-transition: border-color 300ms;
-		-moz-transition: border-color 300ms;
-		-o-transition: border-color 300ms;
-		-webkit-transition: border-color 300ms;
+  transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+
+  border-top-left-radius: 3px 5px;
+  border-bottom-left-radius: 3px 5px;
+  -moz-border-radius-topleft: 3px 5px;
+  -moz-border-radius-bottomleft: 3px 5px;
+  -webkit-border-top-left-radius: 3px 5px;
+  -webkit-border-bottom-left-radius: 3px 5px;
+
+  transition: border-color 300ms;
+  -ms-transition: border-color 300ms;
+  -moz-transition: border-color 300ms;
+  -o-transition: border-color 300ms;
+  -webkit-transition: border-color 300ms;
 }
+
 .contact .envelope .paper a {
-		color: #333;
+  color: #333;
 
-		transition: color 200ms;
-		-ms-transition: color 200ms;
-		-moz-transition: color 200ms;
-		-o-transition: color 200ms;
-		-webkit-transition: color 200ms;
+  transition: color 200ms;
+  -ms-transition: color 200ms;
+  -moz-transition: color 200ms;
+  -o-transition: color 200ms;
+  -webkit-transition: color 200ms;
 }
+
 .contact .envelope .paper a:hover {
-		color: #000;
+  color: #000;
 }
+
 .contact .envelope .paper a.call:hover .i {
-		border-color: #000;
+  border-color: #000;
 }
+
 .contact .envelope .paper a.mail .i {
-		position: absolute;
-		top: 0px;
-		left: 17px;
-		display: inline-block;
-		font-size: 13px;
-		font-weight: bold;
+  position: absolute;
+  top: 0px;
+  left: 17px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+// contact form
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.form-control {
+  height: 47px;
+  border-radius: 0px;
+  border: 1px solid #E3E3E3 !important;
+}
+
+.form-control:active,
+.form-control:focus {
+  border-color: 1px solid #1b5696;
+
+}
+
+.input {
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  border-color: #1b5696 !important;
+}
+
+
+.form-control:hover,
+.form-control:active,
+.form-control:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+textarea.form-control {
+  resize: vertical;
+  height: 100px;
 }
 
 
 
 
+
+
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 1200px) {
+  .contact100-pic {
+    width: 33.5%;
+  }
+
+  .contact100-form {
+    width: 44%;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrap-contact100 {
+    padding: 30px 80px 50px 90px;
+  }
+
+  .contact100-pic {
+    width: 35%;
+  }
+
+  .contact100-form {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-contact100 {
+    padding: 30px 80px 50px 80px;
+  }
+
+  // .contact100-pic {
+  //   display: none;
+  // }
+
+  .contact100-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-contact100 {
+    padding: 80px 15px 50px 15px;
+  }
+
+  form.contact100-form.validate-form.ng-untouched.ng-pristine.ng-valid {
+    margin-top: 120px;
+    margin-left: 0%;
+  }
+
+  .contact {
+    height: 0px !important;
+  }
+
+  .contact .envelope {
+    position: absolute;
+    height: 93px;
+    width: 165px;
+    left: 70% !important;
+    margin-left: 0 !important;
+    top: 0% !important;
+    margin-top: 0 !important;
+    transition: margin-top 300ms;
+    -ms-transition: margin-top 300ms;
+    -moz-transition: margin-top 300ms;
+    -o-transition: margin-top 300ms;
+    -webkit-transition: margin-top 300ms;
+  }
+
+}
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/

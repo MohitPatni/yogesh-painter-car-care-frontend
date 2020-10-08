@@ -6,6 +6,7 @@ function owlCarousel() {
         .owlCarousel({
             loop: true,
             margin: 20,
+          
             autoplay: true,
             nav: false,
             dots: true,
@@ -13,19 +14,19 @@ function owlCarousel() {
             responsiveClass: true,
             responsive: {
                 0: {
-                    items: 3,
+                    items: 5,
                     nav: false,
                 },
                 400: {
-                    items: 4,
+                    items: 6,
                 },
                 600: {
-                    items: 4,
+                    items: 6,
                     nav: false,
                 },
                 1000: {
-                    items: 8,
-                    loop: false,
+                    items: 14,
+                    loop: true,
                 },
             },
         })
@@ -39,10 +40,10 @@ function testimonialOwlCarousel() {
         loop:true,
         autoplay: true,
         margin:0,
-       // animateOut: 'fadeOut',
-       // animateIn: 'fadeIn',
-        nav: false,
-        
+      // animateOut: 'fadeOut',
+       animateIn: 'fadeIn',
+        nav: true,
+        autoplayTimeout: 7000, 
         autoplayHoverPause: false, 
         items: 1,
         autoheight: true,

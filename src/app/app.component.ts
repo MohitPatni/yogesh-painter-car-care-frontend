@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
         AOS.init({
           duration: 800,
           easing: 'slide',
-          once: true
+          once: false
         });
         
       }
