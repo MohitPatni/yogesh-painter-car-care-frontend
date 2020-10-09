@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .border-primary {
   border-color: #1B5696 !important;
 }
@@ -8,70 +9,44 @@
   box-shadow: none;
 }
 
-.contact-section {
-  .contact-info {
-    p {
-      a {
-        color: #000;
-        // color: lighten($black,10%);
-      }
-
-    }
-  }
-
-  .box {
-    width: 100%;
-    display: block;
-    border-radius: 50px;
-
-    margin-bottom: 30px;
-
-    .icon {
-      width: 100px;
-      height: 100px;
-      background: rgba(255, 255, 255, 1);
-      margin: 0 auto;
-      margin-bottom: 2em;
-      border-radius: 50%;
-
-      span {
-        color: #1B5696;
-        font-size: 40px;
-      }
-    }
-
-    h3 {
-      font-size: 17px;
-      font-weight: 550;
-      text-transform: uppercase;
-    }
-  }
-
-  .contact-form {
-    width: 100%;
-  }
+.contact-section .contact-info p a {
+  color: #000;
+}
+.contact-section .box {
+  width: 100%;
+  display: block;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+.contact-section .box .icon {
+  width: 100px;
+  height: 100px;
+  background: white;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  border-radius: 50%;
+}
+.contact-section .box .icon span {
+  color: #1B5696;
+  font-size: 40px;
+}
+.contact-section .box h3 {
+  font-size: 17px;
+  font-weight: 550;
+  text-transform: uppercase;
+}
+.contact-section .contact-form {
+  width: 100%;
 }
 
-.block-9 {
-
-  .form-control {
-    outline: none !important;
-    box-shadow: none !important;
-    font-size: 15px;
-  }
-
-  #map {}
+.block-9 .form-control {
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
 }
-
 .ftco-section {
   padding: 3em 0 3em 0;
 }
-
-
-
-
-
-
 
 /*---------------------------------------------*/
 a {
@@ -96,30 +71,11 @@ a:hover {
 }
 
 /*---------------------------------------------*/
-// h1,h2,h3,h4,h5,h6 {
-// 	margin: 0px;
-// }
-
-// p {
-// 	font-family: Montserrat-Regular;
-// 	font-size: 14px;
-// 	line-height: 1.7;
-// 	color: #666666;
-// 	margin: 0px;
-// }
-
-// ul, li {
-// 	margin: 0px;
-// 	list-style-type: none;
-// }
-
-
 /*---------------------------------------------*/
 input {
   outline: none;
   border: none;
 }
-
 
 textarea:focus,
 input:focus {
@@ -205,12 +161,8 @@ iframe {
   border: none !important;
 }
 
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
-
 .bg-contact100 {
   width: 100%;
   background-repeat: no-repeat;
@@ -230,10 +182,8 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  //background: rgba(132,106,221,0.9);
   background: #1B5696;
   border-radius: 15px;
-  ;
 }
 
 .wrap-contact100 {
@@ -241,7 +191,6 @@ iframe {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -262,7 +211,6 @@ iframe {
 .contact100-pic img {
   max-width: 100%;
 }
-
 
 /*------------------------------------------------------------------
 [  ]*/
@@ -287,7 +235,7 @@ input.input100 {
   padding: 0 30px 0 50px;
 }
 
-input.input100[name="email"] {
+input.input100[name=email] {
   padding: 0 30px 0 54px;
 }
 
@@ -315,7 +263,6 @@ textarea.input100 {
   color: #666666;
 }
 
-
 /*------------------------------------------------------------------
 [ Focus ]*/
 .focus-input100 {
@@ -331,7 +278,7 @@ textarea.input100 {
   color: rgba(132, 106, 221, 0.5);
 }
 
-.input100:focus+.focus-input100 {
+.input100:focus + .focus-input100 {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
@@ -342,14 +289,12 @@ textarea.input100 {
     opacity: 0;
   }
 }
-
 @keyframes anim-shadow {
   to {
     box-shadow: 0px 0px 60px 25px;
     opacity: 0;
   }
 }
-
 .symbol-input100 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -367,14 +312,13 @@ textarea.input100 {
   pointer-events: none;
   color: #aaaaaa;
   font-size: 15px;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.input100:focus+.focus-input100+.symbol-input100 {
+.input100:focus + .focus-input100 + .symbol-input100 {
   color: #1B5696;
   padding-left: 22px;
 }
@@ -410,7 +354,6 @@ textarea.input100 {
   justify-content: center;
   align-items: center;
   padding: 0 25px;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -420,7 +363,6 @@ textarea.input100 {
 .contact100-form-btn:hover {
   background: #333333;
 }
-
 
 .validate-input {
   position: relative;
@@ -442,16 +384,13 @@ textarea.input100 {
   transform: translateY(-50%);
   right: 8px;
   pointer-events: none;
-
   font-family: Montserrat-Medium;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
-
   visibility: hidden;
   opacity: 0;
-
   -webkit-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
@@ -459,7 +398,7 @@ textarea.input100 {
 }
 
 .alert-validate::after {
-  content: "\f06a";
+  content: "";
   font-family: FontAwesome;
   display: block;
   position: absolute;
@@ -485,13 +424,6 @@ textarea.input100 {
     opacity: 1;
   }
 }
-
-//#########################
-
-
-
-
-
 .text-white h1,
 .text-white h2,
 .text-white h3,
@@ -516,27 +448,14 @@ textarea.input100 {
     max-width: 1170px;
   }
 }
-
 /* Medium Device = 1200px */
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header__menu ul li {
     margin-right: 32px;
   }
-
-
-
 }
-
 /* Tablet Device = 768px */
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
-
 /* Wide Mobile = 480px */
-
-@media only screen and (max-width: 767px) {}
-
-
 .form-check::-webkit-scrollbar {
   width: 8px;
 }
@@ -569,51 +488,30 @@ textarea.input100 {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   padding: 14px 30px;
-
 }
 
 .form-check .form-check-label {
   width: 100%;
   padding-bottom: 10px;
-
 }
-
-.b-radius {}
 
 .form-check .form-check-sign::before,
 .form-check .form-check-sign::after {
-
   background-color: transparent;
-  // border: 1px solid #000000;
   height: 15px;
   width: 15px;
   margin-top: 5px;
 }
 
 .form-check .form-check-sign::after {
-
   content: "";
   background-color: #1B5696;
 }
 
-/// Envelop
-//   #bg {
-// 		position: absolute;
-// 		left: 0px;
-// 		top: 0px;
-// 		height: 100%;
-// 		width: 100%;
-// 		background: #ffffff; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2JiYmJiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==); background: -moz-radial-gradient(center, ellipse cover,  #ffffff 40%, #bbbbbb 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(40%,#ffffff), color-stop(100%,#bbbbbb)); background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -o-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -ms-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: radial-gradient(ellipse at center,  #ffffff 40%,#bbbbbb 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bbbbbb',GradientType=1 );
-// }
 .contact {
   position: absolute;
-  // left: 50%;
-  // top: 50%;
-  // margin-left: -125px;
-  // margin-top: -125px;
   height: 400px;
   width: 135px;
-
   border-radius: 2px;
   -ms-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -629,8 +527,6 @@ textarea.input100 {
   margin-left: -83px;
   top: 50%;
   margin-top: -50px;
-  // background: #F9F9F9;
-
   transition: margin-top 300ms;
   -ms-transition: margin-top 300ms;
   -moz-transition: margin-top 300ms;
@@ -654,13 +550,11 @@ textarea.input100 {
   height: 73px;
   z-index: 30;
   overflow: hidden;
-
   transform-origin: top;
   -ms-transform-origin: top;
   -moz-transform-origin: top;
   -o-transform-origin: top;
   -webkit-transform-origin: top;
-
   transition: transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
   -ms-transition: -ms-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
   -moz-transition: -moz-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
@@ -674,10 +568,8 @@ textarea.input100 {
   -moz-transition: -moz-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
   -o-transition: -o-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
   -webkit-transition: -webkit-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-
   height: 10px;
   top: -60px;
-
   transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
   -moz-transform: rotateX(180deg);
@@ -791,20 +683,17 @@ textarea.input100 {
   border-style: solid;
   border-color: #555;
   background: transparent;
-
   transform: rotate(-30deg);
   -ms-transform: rotate(-30deg);
   -moz-transform: rotate(-30deg);
   -o-transform: rotate(-30deg);
   -webkit-transform: rotate(-30deg);
-
   border-top-left-radius: 3px 5px;
   border-bottom-left-radius: 3px 5px;
   -moz-border-radius-topleft: 3px 5px;
   -moz-border-radius-bottomleft: 3px 5px;
   -webkit-border-top-left-radius: 3px 5px;
   -webkit-border-bottom-left-radius: 3px 5px;
-
   transition: border-color 300ms;
   -ms-transition: border-color 300ms;
   -moz-transition: border-color 300ms;
@@ -814,7 +703,6 @@ textarea.input100 {
 
 .contact .envelope .paper a {
   color: #333;
-
   transition: color 200ms;
   -ms-transition: color 200ms;
   -moz-transition: color 200ms;
@@ -839,7 +727,6 @@ textarea.input100 {
   font-weight: bold;
 }
 
-// contact form
 .font-weight-bold {
   font-weight: bold;
   color: #fff;
@@ -848,14 +735,12 @@ textarea.input100 {
 .form-control {
   height: 47px;
   border-radius: 0px;
-  // border: 1px solid #E3E3E3 !important;
   background-color: #fff;
 }
 
 .form-control:active,
 .form-control:focus {
   border-color: 1px solid #1b5696;
-
 }
 
 .input {
@@ -866,7 +751,6 @@ textarea:focus,
 input:focus {
   border-color: #1b5696 !important;
 }
-
 
 .form-control:hover,
 .form-control:active,
@@ -880,8 +764,6 @@ textarea.form-control {
   height: 100px;
 }
 
-
-//Banner Start
 .banner-area {
   background: url(assets/img/header-bg.jpg) center;
   background-size: cover;
@@ -892,7 +774,6 @@ textarea.form-control {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 .overlay {
   position: absolute;
   left: 0;
@@ -900,7 +781,6 @@ textarea.form-control {
   top: 0;
   bottom: 0;
 }
-
 
 .contact-content {
   padding: 120px 0px;
@@ -924,23 +804,16 @@ textarea.form-control {
 }
 
 .banner-align {
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
-//Banner End
-
-
 
 .header-right {
   background-color: rgba(32, 46, 69, 0.4);
   border: 1px solid #4b5263;
   padding: 50px;
 }
-
 
 .header-right .btn-lg {
   font-size: 14px;
@@ -949,19 +822,13 @@ textarea.form-control {
 }
 
 .fullscreen {
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-
-
-
 /*------------------------------------------------------------------
 [ Responsive ]*/
-
 @media (max-width: 1200px) {
   .contact100-pic {
     width: 33.5%;
@@ -971,7 +838,6 @@ textarea.form-control {
     width: 44%;
   }
 }
-
 @media (max-width: 992px) {
   .wrap-contact100 {
     padding: 30px 80px 50px 90px;
@@ -985,15 +851,10 @@ textarea.form-control {
     width: 55%;
   }
 }
-
 @media (max-width: 768px) {
   .wrap-contact100 {
     padding: 30px 80px 50px 80px;
   }
-
-  // .contact100-pic {
-  //   display: none;
-  // }
 
   .contact100-form {
     width: 100%;
@@ -1010,10 +871,7 @@ textarea.form-control {
   .header-right .dates-wrap {
     margin-top: 1rem;
   }
-
-
 }
-
 @media (max-width: 576px) {
   .wrap-contact100 {
     padding: 80px 15px 50px 15px;
@@ -1042,9 +900,7 @@ textarea.form-control {
     -o-transition: margin-top 300ms;
     -webkit-transition: margin-top 300ms;
   }
-
 }
-
 @media (max-width: 767px) {
   .fullscreen {
     height: 100% !important;
@@ -1053,6 +909,5 @@ textarea.form-control {
     justify-content: center;
   }
 }
-
 /*------------------------------------------------------------------
 [ Alert validate ]*/

@@ -3,7 +3,7 @@ import * as Rellax from 'rellax';
 
 
 @Component({
-  selector: 'app-index',
+  selector: 'app-contact',
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.scss','../../../assets/css/common.css']
 })
