@@ -7,12 +7,13 @@ import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { AgmCoreModule } from '@agm/core';
 
 import { AboutUsComponent } from './about-us/about-us.component';
-import { FooterComponent } from './footer/footer.component';
+
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { IndexComponent } from './index/index.component';
 import { AllServicesComponent } from './all-services/all-services.component';
 import {ThemeComponent} from './theme.component'
 import { AllServicesModule } from './all-services/all-services.module';
+
 
 @NgModule({
     imports: [
@@ -31,8 +32,8 @@ import { AllServicesModule } from './all-services/all-services.module';
         ContactUsComponent,
         IndexComponent,
         ThemeComponent,
-        FooterComponent,
-       
+        
+      
         
     ]
 })

@@ -1,0 +1,64 @@
+/*== About Area CSS Start ==*/
+.about-content {
+  line-height: 2.3em;
+}
+
+.about-content p {
+  margin-bottom: 25px;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-btn a {
+  background-color: #ffd000;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 20px;
+  padding: 6px 30px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.about-btn a:hover {
+  background-color: #222;
+}
+
+.about-video {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.about-video iframe {
+  border: medium none;
+  border-radius: 3px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/*== About Area CSS End ==*/
+.overlay-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .border-responsive .border-right {
+    border-right: none !important;
+  }
+}

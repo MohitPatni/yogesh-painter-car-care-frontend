@@ -9,16 +9,21 @@ import { ComponentsModule } from './components/components.module';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { ThemeModule } from './theme/theme.module';
 import { BrowserModule } from '@angular/platform-browser';  
 import { HttpClientModule } from '@angular/common/http';
 import { AllServicesComponent } from './theme/all-services/all-services.component';
+import {AllServicesModule}  from './theme/all-services/all-services.module';
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
+        FooterComponent,
+  
+      
     ],
     imports: [
         BrowserAnimationsModule,
@@ -30,7 +35,7 @@ import { AllServicesComponent } from './theme/all-services/all-services.componen
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-       
+
         ThemeModule,
         
         

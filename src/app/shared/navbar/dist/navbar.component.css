@@ -1,11 +1,13 @@
 .navbar.navbar-transparent {
   background-color: #04091E !important;
+  font-weight: 600;
 }
 
 .dropdown-menu .dropdown-item:focus,
 .dropdown-menu .dropdown-item:hover {
   background-color: #04091E;
   color: white;
+  font-weight: 600;
 }
 
 /* Tablet Device = 768px */
