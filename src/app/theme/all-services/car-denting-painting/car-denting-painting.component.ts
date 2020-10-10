@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Rellax from 'rellax';
-
+declare const imgGal: any;
 
 @Component({
   selector: 'car-denting-painting',
@@ -11,7 +11,7 @@ export class CarDentingPaintingComponent implements OnInit {
   
     constructor() {  }
     ngOnInit() {
-     
+      // imgGal();
     }
     ngOnDestroy(){
         

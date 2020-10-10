@@ -1,5 +1,14 @@
 "use strict";
 
+function imgGal() {
+  $('.img-gal').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+}
+
 function owlCarousel() {
   $(".test-owal").owlCarousel({
     loop: true,

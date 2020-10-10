@@ -7,11 +7,7 @@
   user-select: none;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
+
 
 
 //Banner Start
@@ -64,3 +60,94 @@
 
 
 //Banner End
+/*-------- start home-calltoaction Area -------------*/
+.home-calltoaction-area {
+  background: url(assets/img/call-action-bg.jpg) center;
+  background-size: cover;
+  position: relative;
+}
+
+.home-calltoaction-area .overlay-bg {
+  background-color: rgba(249, 215, 0, 0.9);
+}
+
+.home-calltoaction-area p {
+  margin-bottom: 0px;
+  margin-top: 20px;
+  color: #222;
+}
+
+.home-calltoaction-area .btn-left {
+  text-align: right;
+}
+
+
+
+.home-calltoaction-area .primary-btn {
+  text-transform: uppercase !important;
+  background-color: #222;
+}
+
+.home-calltoaction-area .primary-btn:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+.section-gap {
+  padding: 120px 0;
+  align-items: center;
+}
+
+/*-------- end home-calltoaction Area -------------*/
+
+/*-------- Start image-gallery Area -------------*/
+.image-gallery-area {
+  background-color: #f9f9ff;
+}
+
+.image-gallery-area .single-gallery:nth-child(2) {
+  margin-top: 80px;
+}
+
+@media (max-width: 1024px) {
+  .image-gallery-area .single-gallery:nth-child(2) {
+    margin-top: 0px;
+  }
+}
+
+.image-gallery-area .single-gallery img {
+  width: 100%;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.image-gallery-area .single-gallery a:hover img {
+  opacity: .6;
+}
+
+/*-------- End image-gallery Area -------------*/
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-calltoaction-area .btn-left {
+    text-align: left;
+    margin-top: 30px;
+  }
+}
